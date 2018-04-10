@@ -28,7 +28,6 @@ StatsPlugin.prototype.apply = function apply (compiler) {
       },
       source: function getSource () {
         var stats = compilation.getStats().toJson(options)
-        var result
 
         if (cache) {
           cache = _.merge(cache, stats)
